@@ -8,25 +8,25 @@
 */
 int main(void)
 {
-	int i;
-	int j;
+	int x;
+	int y;
 	int z;
 
-	i = 0;
-	while (i <= 7)
+	x = 0;
+	while (x <= 7)
 	{
-		j = 0;
-		while (j <= 8)
+		y = 0;
+		while (y <= 8)
 		{
 			z = 0;
 			while (z <= 9)
 			{
-				if (z > j && j > i)
+				if (z > y && y > x)
 				{
-					putchar(i + 48);
+					putchar(x + 48);
 					putchar(y + 48);
 					putchar(z + 48);
-					if (i < 7 || j < 8 || z < 9)
+					if (x < 7 || y < 8 || z < 9)
 					{
 						putchar(',');
 						putchar(' ');
@@ -34,9 +34,9 @@ int main(void)
 				}
 				z++;
 			}
-			j++;
+			y++;
 		}
-		i++;
+		x++;
 	}
 	putchar('\n');
 	return (0);
