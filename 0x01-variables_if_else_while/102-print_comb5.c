@@ -3,8 +3,8 @@
 /**
  * main - print_comb5.c
  *
- * Description: prints all possible combinations of two two-digit numbers.
- * Return: The program should return 0.
+ * Description: prints all possible combinations of two two-digit numbers
+ * Return: Return 0
 */
 int main(void)
 {
@@ -19,13 +19,13 @@ int main(void)
 		{
 			putchar((i / 10) + 48);
 			putchar((i % 10) + 48);
-			putchar(' ');
+			putchar(32);
 			putchar((j / 10) + 48);
 			putchar((j % 10) + 48);
-			if (i != 98 && j != 99)
+			if (!(i == 98 && j == 99))
 			{
 				putchar(',');
-				putchar(' ');
+				putchar(32);
 			}
 			j++;
 		}
