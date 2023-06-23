@@ -4,15 +4,15 @@
  * @n: the number to start from
  * Return: void function (returns nothing)
 */
-void print_to_98(int nbr)
+void print_to_98(int n)
 {
-	while (nbr != 98)
+	while (n != 98)
 	{
-		printf("%d, ", nbr);
-		if (nbr > 98)
-			nbr--;
-		if (nbr < 98)
-			nbr++;
+		printf("%d, ", n);
+		if (n > 98)
+			n--;
+		if (n < 98)
+			n++;
 	}
-	printf("%d\n", nbr);
+	printf("%d\n", n);
 }
