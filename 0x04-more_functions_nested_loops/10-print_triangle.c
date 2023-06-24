@@ -5,33 +5,32 @@
  * @size: Defines size of traingle
  * Return: void function
  */
+
 void print_triangle(int size)
 {
-	int i;
-	int k;
-	int j;
+	int i, j;
 
+	i = 1;
 	if (size <= 0)
 	{
 		_putchar('\n');
+		return;
 	}
-	else
+	while (i <= size)
 	{
-		i = 0;
-		while (i <= (size - 1))
+		j = 0;
+		while (j < size - i)
 		{
-
-			for (k = 0; k < (size - 1) - i; k++)
-			{
-				_putchar(' ');
-			}
-
-			for (j = 0; j <= i; j++)
-			{
-				_putchar(35);
-			}
-			i++;
-			_putchar('\n');
+			_putchar(' ');
+			j++;
 		}
+		j = 0;
+		while (j < i)
+		{
+			_putchar(35);
+			j++;
+		}
+		_putchar('\n');
+		i++;
 	}
 }
