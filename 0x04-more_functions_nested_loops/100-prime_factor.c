@@ -2,23 +2,36 @@
 
 /**
  * main - Entry point.
- * @n: the number to be printed
+ *
  * Return: return 0
  */
 
 int main(void)
 {
-	long n;
-	long i;
+	long int i, max, nbr;
 
-	n = 612852475143;
-	for (i = 2; i < n; i++)
+	nbr = 612852475143;
+	max = -1;
+
+	while (nbr % 2 == 0)
 	{
-		while (n % i == 0)
-			n = n / i;
+		max = 2;
+		nbr /= 2;
 	}
 
-	printf("%lu\n", n);
+	for (i = 3; i <= sqrt(nbr); i = i + 2)
+	{
+		while (nbr % i == 0)
+		{
+			max = i;
+			nbr = nbr / i;
+		}
+	}
+
+	if (nbr > 2)
+		max = nbr;
+
+	printf("%ld\n", max);
 
 	return (0);
 }
