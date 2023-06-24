@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * mul - multiplies two integers
- * @a: Stores input integer
- * @b: Stores input integer
+ * mul - prints the alphabet in lowercase
+ * @a: the variable
+ * @b: variable
  * Return: output of value
  */
 
 int mul(int a, int b)
 {
-    return (a * b);
+	return (a * b);
 }
