@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - Entry point.
@@ -7,18 +7,18 @@
  */
 
 int main(void)
-
 {
-	long n, i;
+	long n;
+	long i;
 
 	n = 612852475143;
-	i = 2;
-	while (i < n)
+	for (i = 2; i < n; i++)
 	{
 		while (n % i == 0)
 			n = n / i;
-		i++
 	}
+
 	printf("%lu\n", n);
+
 	return (0);
 }
