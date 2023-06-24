@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point.
- *
+ * @n: the number to be printed
  * Return: return 0
  */
 
