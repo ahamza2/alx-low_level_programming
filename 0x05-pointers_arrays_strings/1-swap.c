@@ -2,7 +2,7 @@
 
 /**
  *swap_int - swaps two variable values
- *@a: variable first 
+ *@a: variable first
  *@b: variable second
  *Return: void function
  */
